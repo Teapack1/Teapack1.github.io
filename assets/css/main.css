@@ -3352,7 +3352,7 @@ input, select, textarea {
 	}
 
 	.expanded {
-		height: 720px; /* adjust expanded height as needed */
+		height: 1024px; /* adjust expanded height as needed */
 	}
 
 	.contentWrapper {
