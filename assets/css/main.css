@@ -4017,6 +4017,29 @@ opacity: 1;
 	width: 100%; /* Underline width transitions to full width on hover/focus */
 	color: var(--secondary-color); /* Color changes on hover/focus */
   }
+
+
+  .hover-link-nat {
+	font-weight: normal; /* Makes the text bold */
+	color: var(--accent-color); /* Dark desaturated blue color */
+
+	position: relative;
+	text-decoration: underline; /* No underline */
+	cursor: default; /* Indicates that the item is clickable */
+  }
+  
+  .hover-link-nat::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--secondary-color); /* Color for the underline */
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+  }
+
+
   
   .description {
 	color: #626262; /* A lighter grey color for descriptions */

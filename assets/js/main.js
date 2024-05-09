@@ -216,7 +216,7 @@ document.querySelectorAll('.skill-stars_2').forEach(container => {
 
 
 // Optional JavaScript to display a hover image on link hover
-document.querySelectorAll('.hover-link').forEach(link => {
+document.querySelectorAll('.hover-link, .hover-link-nat').forEach(link => {
 	link.addEventListener('mouseenter', function(e) {
 	  const imgSrc = this.getAttribute('data-img-src');
 	  const hoverImage = document.getElementById('hover-image');
