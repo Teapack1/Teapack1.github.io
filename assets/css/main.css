@@ -3580,7 +3580,7 @@ opacity: 1;
 }
 
 #about-me {
-	padding: 4em 0 4em 0;
+	padding: 0em 0 4em 0;
     text-align: center;
 	background-color: var(--background-color);
 }
@@ -3949,7 +3949,7 @@ opacity: 1;
 
 .clickable {
     color: var(--accent-color); /* Dark desaturated blue color */
-    letter-spacing: 0.2em; /* Space out the letters slightly */
+    letter-spacing: 0.11em; /* Space out the letters slightly */
     position: relative;
     text-decoration: underline solid var(--accent-color); /* Thin underline */
     text-underline-offset: 3px; /* Offset the underline a bit lower than the text */
@@ -3988,12 +3988,14 @@ opacity: 1;
   .hover-link {
 	font-weight: bold; /* Makes the text bold */
 	color: var(--accent-color); /* Dark desaturated blue color */
-	text-transform: uppercase; /* Uppercase letters for a design look */
+	text-transform: capitalize; /* Uppercase letters for a design look */
 	letter-spacing: 0.05em; /* Space out the letters slightly */
 
 	position: relative;
-	text-decoration: underline; /* No underline */
+	text-decoration: none; /* No underline */
 	cursor: default; /* Indicates that the item is clickable */
+
+	margin: 16px;
   }
   
   .hover-link::after {
