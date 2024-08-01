@@ -3664,16 +3664,6 @@ opacity: 1;
 
 
 
-#skills-overview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff; /* Example background color */
-}
-
 
 .skills-list {
     /* Grid layout for two columns with increased gap */
@@ -3746,56 +3736,7 @@ opacity: 1;
 }
 
 
-.skill-row {
-    /* Uniform skill bar container */
-    /* background-color: #f0f0f0; */
-    width: 100%; /* Skill bars will now take up 100% width of the column */
-    height: 28px;
-    border-radius: 16px;
-	align-items: center; /* Center align vertically */
-	display: flex;
-    justify-content: flex-end; /* Align skill-row content to the right */
-}
 
-.skill-row span {
-    margin-right: 16px; /* 16px space between text and stars */
-    font-size: 1.0rem; /* Adjust font size as needed */
-    white-space: nowrap; /* Ensures text does not wrap */
-}
-
-.skill-stars {
-
-    font-size: 18px; /* Adjust the size of stars */
-	margin-right: 5%;
-	display: inline-flex; /* Use flex to keep stars inline */
-    gap: 4px; /* Adjust as needed for spacing between stars */
-}
-
-.skill-stars_2 {
-
-    font-size: 18px; /* Adjust the size of stars */
-	margin-right: 5%;
-	display: inline-flex; /* Use flex to keep stars inline */
-    gap: 4px; /* Adjust as needed for spacing between stars */
-}
-
-.filled,
-.unfilled {
-    font-size: 18px; /* Adjust star size as needed */
-    margin-left: 2px; /* Space between stars */
-}
-
-.filled {
-    color: var(--third-color); /* Color of filled stars */
-}
-
-.filled_2 {
-    color: var(--secondary-color); /* Color of filled stars */
-}
-
-.unfilled {
-    color: var(--primary-color); /* Color of unfilled stars */
-}
 
 
 .skills-intro{
@@ -3810,25 +3751,8 @@ opacity: 1;
     margin: auto; /* Auto margins for horizontal centering */
 }
 
-.skills-header h3 {
-    font-size: 2em;
-    color: #333;
-}
 
-.skills-header p {
-    font-size: 1em;
-    margin-top: 10px;
-}
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr)); /* Adjusts grid items based on container width */
-    gap: 32px; /* Space between grid items */
-    justify-content: center; /* Centers grid items horizontally */
-    align-items: start; /* Aligns grid items to the start of the grid area */
-    margin-top: 20px; /* Adjust as needed */
-    width: 100%; /* Adjust as needed */
-}
 
 .skill-category h4 {
     font-size: 1em;
@@ -3853,98 +3777,6 @@ opacity: 1;
     }
 }
 
-@media (max-width: 1200px) {
-    .skill-set .skill span {
-        font-size: 0.9em; /* Smaller font size for medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .skill-set .skill span {
-        font-size: 0.8em; /* Even smaller font size for small screens */
-    }
-}
-
-/* Additional media query for very small screens, if necessary */
-@media (max-width: 480px) {
-    .skill-set .skill span {
-        font-size: 0.7em; /* Smallest font size for very small screens */
-    }
-}
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
- .button-container {
-    display: flex;
-    justify-content: center;
-}
-.skills-overview {
-    text-align: center;
-    margin: 2px 50px 32px 32px;
-}
-
-.hexagon-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 256px; /* Smaller width */
-    height: 40px; /* Smaller height, adjust based on aspect ratio */
-    background-color: var(--accent-color);
-    position: relative;
-    margin-bottom: 25px;
-    /* Complex clip-path based on the provided shape */
-    clip-path: polygon(50% 0%, 95% 20%, 100% 50%, 50% 100%, 0% 50%, 5% 20%);
-    transition: background-color 0.5s ease;
-}
-
-.hexagon-button:hover {
-    background-color: var(--secondary-color);
-}
-
-.hexagon-icon {
-    transform: rotate(-45deg); /* Adjust if necessary based on the complex shape */
-    color: white;
-    font-size: 0.8em; /* Smaller font size */
-    font-weight: bold;
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.skills-container {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease-out;
-}
-
-/* Animation when skills are shown */
-.skills-container.open {
-    max-height: 1000px; /* Adjust as necessary */
-    transition: max-height 1s ease-in;
-}
-
 
 
 .clickable {
@@ -3961,7 +3793,10 @@ opacity: 1;
 .clickable:hover,
 .clickable:focus {
     text-decoration-color: var(--primary-color); /* Change underline color on hover/focus */
+	color: var(--secondary-color);
     text-decoration-thickness: 2px; /* Thicken the underline on hover/focus */
+
+	transition: color 0.4s;
 }
 
 
@@ -4070,3 +3905,157 @@ opacity: 1;
 	filter: brightness(0.8); /* Example effect on hover */
   }
   
+
+
+  
+
+
+
+
+
+
+
+ 
+  
+
+
+  .skill-trees-section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.skill-trees-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skill-trees-section .tree-heading {
+    align-self: flex-start; /* Align the heading to the start (left) of the container */
+    margin-left: 2%; /* Adjust the margin to move the heading slightly to the left */
+    text-align: left;
+    width: 100%;
+}
+
+.skill-tree {
+    width: 50%; /* Tiles will take up 50% of the width */
+    text-align: left;
+}
+
+.skill-branch, .skill-sub-branch {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.skill-branch-title {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--heading);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--accent-color); /* Main tree titles color */
+    transition: background 0.3s, color 0.3s;
+}
+
+.skill-sub-branch-title {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background: var(--primary-color); /* Sub-branch titles color */
+    transition: background 0.3s, color 0.3s;
+}
+
+.skill-branch-title:hover {
+    background: var(--secondary-color); /* Darker shade for main tree titles on hover */
+    color: var(--accent-color);
+	transition: background 0.4s, color 0.4s;
+}
+
+.skill-sub-branch-title:hover {
+    background: var(--secondary-color); /* Darker shade for sub-branch titles on hover */
+    color: var(--accent-color);
+	transition: background 0.4s, color 0.4s;
+}
+
+.skill-sub-branch {
+    display: none;
+    margin-left: 20px;
+}
+
+.skill-items {
+    display: none;
+    margin-left: 20px;
+}
+
+.skill-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--background-color);
+    transition: background 0.3s;
+    position: relative;
+}
+
+.skill-item:hover {
+    background: #f5f5f5;
+}
+
+.skill-stars, .skill-stars_2 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.skill-stars .fas, .skill-stars_2 .fas {
+    color: gold;
+}
+
+.skill-stars .unfilled, .skill-stars_2 .unfilled {
+    color: #ddd;
+}
+
+.skill-description {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.skill-item:hover .skill-description {
+    display: block;
+    z-index: 10;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .skill-tree {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .skill-branch-title, .skill-sub-branch-title, .skill-item {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .skill-description {
+        width: 100%; /* Ensure descriptions fit smaller screens */
+    }
+}

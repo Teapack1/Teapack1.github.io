@@ -232,3 +232,35 @@ document.querySelectorAll('.hover-link, .hover-link-nat').forEach(link => {
 	});
   });
   
+
+
+
+
+  
+
+  
+
+  function toggleBranch(branchId) {
+    var branch = document.getElementById(branchId);
+    if (branch.style.display === "none" || branch.style.display === "") {
+        branch.style.display = "block";
+    } else {
+        branch.style.display = "none";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.skill-stars, .skill-stars_2').forEach(container => {
+        const rating = parseInt(container.getAttribute('data-rating'), 10);
+        container.innerHTML = `${'<i class="fas fa-star"></i>'.repeat(rating)}${'<i class="fas fa-star unfilled"></i>'.repeat(5 - rating)}`;
+    });
+
+    // Initialize all branches as collapsed
+    document.querySelectorAll('.skill-sub-branch').forEach(branch => {
+        branch.style.display = 'none';
+    });
+
+    document.querySelectorAll('.skill-items').forEach(items => {
+        items.style.display = 'none';
+    });
+});
