@@ -3919,6 +3919,8 @@ opacity: 1;
   
 
 
+
+  
   .skill-trees-section {
     margin-top: 50px;
     width: 100%;
@@ -3932,7 +3934,7 @@ opacity: 1;
 
 .skill-trees-section .tree-heading {
     align-self: flex-start; /* Align the heading to the start (left) of the container */
-    margin-left: 2%; /* Adjust the margin to move the heading slightly to the left */
+    margin-left: 1%; /* Adjust the margin to move the heading slightly to the left */
     text-align: left;
     width: 100%;
 }
@@ -3949,8 +3951,8 @@ opacity: 1;
 
 .skill-branch-title {
     cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
     color: var(--heading);
     margin: 5px 0;
     padding: 10px;
@@ -3962,7 +3964,7 @@ opacity: 1;
 
 .skill-sub-branch-title {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--accent-color);
     margin: 5px 0;
@@ -4003,6 +4005,7 @@ opacity: 1;
     background: var(--background-color);
     transition: background 0.3s;
     position: relative;
+	font-size: 14px;
 }
 
 .skill-item:hover {
@@ -4051,7 +4054,7 @@ opacity: 1;
     }
 
     .skill-branch-title, .skill-sub-branch-title, .skill-item {
-        font-size: 16px;
+        font-size: 14px;
         padding: 8px;
     }
 
